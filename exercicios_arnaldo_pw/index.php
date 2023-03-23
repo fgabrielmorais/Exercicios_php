@@ -8,9 +8,12 @@
 </head>
 <body>
     
-<a href="nmrPrimo.php">Número Primo</a>
-<a href="nmrPerfeito.php">Número Perfeito</a>
-<a href="fibonnacci.php">Fibonnacci</a>
+<a href="nmrPrimo.php">Número Primo</a><br>
+<hr>
+<a href="nmrPerfeito.php">Número Perfeito</a><br>
+<hr>
+<a href="fibonnacci.php">Fibonnacci</a><br>
+<hr>
 <a href="exercicioLegal.php">Exercício legal</a>
 
 </body>
