@@ -3,25 +3,36 @@ if(isset($_POST['calculo'])){
 
 $numeroUser = $_POST['numeroUser'];
 
-$alternativa = $numeroUser;
 $multiplicado = 0;
 
-//fazendo a contagem valer até o valor do usuário recebido em outra variável
-for($i = 1; $i <= $alternativa; $i++){
 
-    //fazendo a contagem valer até o valor do usuário
-    for($x = 1; $x <= $numeroUser; $x++){
-        
-    //multiplicando esse valor pelos números da contagem
-    $multiplicado = $x * $numeroUser;
-    echo $multiplicado . " ";
+if($numeroUser > 0){
+
+for($i = 1; $i < $numeroUser; $i++){
+    
+    for($x = 1; $x <= $i; $x++){
+        $multiplicado = $i * $x;
+        echo $multiplicado . " ";
+    }
+    echo "<br>";
 }
 
-echo "<br>";
-//subtraindo por menos um o valor do usuário
-$numeroUser = $numeroUser - 1;
+for($i = $numeroUser; $i >= 1; $i--){
+
+    for($x = 1; $x <= $i; $x++){
+
+        $multiplicado = $i * $x;
+        echo $multiplicado . " ";
+    }
+
+    echo "<br>";
+
 }
 
+}
+else{
+    echo 'NÃO PODE NÚMERO NEGATIVO';
+}
 }
 
 
